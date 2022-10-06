@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <!-- Title -->
+    <title>Jarditou</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Logo -->
+        <a href="index.html"><img class="logo" src="src/img/jarditou_logo.jpg" alt="logo"></a>
+        <!-- NavBar -->
+        <nav class="container">
+            <div class="links">
+                <ul>
+                    <li>
+                        <a href="index.html" class="nav-link">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="tableau.html" class="nav-link">Tableau</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="nav-link">Formulaire</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Banner -->
+        <section class="container">            
+            <img class="banner" src="src/img/promotion.jpg" alt="baniére">            
+        </section>        
+    </header>
+    <div class="showcase-info">
+        <h1 class="heading">Formulaire</h1>
+        <hr></hr>
+    <!-- Form    -->
+    <form class="form" action="http://bienvu.net/script.php" method="get">
+        <fieldset class="form">
+            <!-- Personnal Info -->
+            <legend>Vos coordonnées</legend>
+            <div>
+                <label for="name">Votre nom* :</label>
+                <input id="name" type="text" name="name" required>
+            </div>
+            <div>
+                <label for="firstname">Votre prénom* :</label>
+                <input  id="firstname" name="firstname" type="text" required>
+            </div>
+            <div>
+                <label>Sexe* :</label>
+                <input type="radio" id="female" name="female" value="female"><label for="female">Féminin</label>
+                <input type="radio" id="male" name="male" value="male"><label for="male">Masculin</label>
+            </div>
+            <div>
+                <label for="birthdate">Date de naissance*:</label>
+                <input type="date" id="birthdate"  required>
+            </div>
+            <div>
+                <label for="code">Code Postal*:</label>
+                <input type="text" id="code" name="code" required>
+            </div>
+            <div>
+                <label for="address">Adresse :</label>
+                <input type="text" id="address" name="address">
+            </div>
+            <div>
+                <label for="city">Ville :</label>
+                <input type="text" id="city" name="city">
+            </div>
+            <div>
+                <label for="email">Email*:</label>
+                <input type="email" placeholder="dave.loper@afpa.fr" name="email" id="email" required>
+            </div>        
+        </fieldset>
+        <fieldset class="form">
+            <!-- Question -->
+            <legend>Votre demande</legend>
+            <div>
+                <label for="topic">Sujet</label>
+                <select name="topic" id="topic">
+                    <option disabled selected>Veuillez sélectionner un sujet</option>         
+                    <option value="Mes commandes">Mes commandes</option>
+                    <option value="Question sur un produit">Question sur un produit</option>
+                    <option value="Reclamation">Reclamation</option>
+                    <option value="autres">Autres</option>
+                </select>
+            </div>            
+            <div>
+                <label for="question">Votre question*</label>
+                <textarea name="question" id="question" cols="30" rows="10" required></textarea>
+            </div>            
+        </fieldset>
+        <!-- Valid checkbox -->
+        <div>
+            <input type="checkbox" id="checkbox" name="checkbox" required><label for="checkbox">*J'accepte le traitement</label>
+        </div>
+        <!-- BTN -->
+        <div class="btn">
+            <input type="submit">
+            <input type="submit" value="Annuler">
+        </div>     
+                
+    </form>
+    <!-- Footer         -->
+     <footer class="container">
+        <div class="links">
+            <ul>
+                <li>
+                    <a href="#" class="nav-link">Mention légales</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">Horaires</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">Plan du site</a>
+                </li>
+            </ul>
+        </div>        
+    </footer>
+    <!-- Script JS -->
+    <script src="/assets/js/script.js"></script>    
+</body>
+</html>
