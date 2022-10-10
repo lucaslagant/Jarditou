@@ -54,15 +54,14 @@ nav.container{
     overflow: hidden;
     padding-top: 10px;
     padding-bottom: 20px;
+    margin-bottom: 0.7rem;
+
 }
 .showcase-area .container{
     display: grid;
     grid-template-columns: 1fr 30%;
     max-height: 600px;
     align-items: flex-start;
-}
-.showcase-area .sub-heading{
-    margin-bottom: 0.7rem;
 }
 .showcase-area .heading{
     font-size: 2.5rem;
