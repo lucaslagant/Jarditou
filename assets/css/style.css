@@ -11,9 +11,7 @@ body.stopScrolling{
 .logo{
     width: 20rem;
 }
-.img-table{
-    width: 100px;
-}
+
 .presentation{
     display: grid;
     grid-template-columns: 1fr 30%;
@@ -104,6 +102,9 @@ footer.container{
     cursor: pointer;
     margin: 100px auto;
     border: 2px #000000;
+}
+.img-table{
+    width: 100px;
 }
 thead tr{
     background-color: greenyellow;
