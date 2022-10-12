@@ -155,10 +155,10 @@ tbody tr:nth-child(even){
         row-gap: 4rem;
     }
     .showcase-area .heading{
-        font-size: 2rem;
+        font-size: 1rem;
     }
     .showcase-area .text{
-        font-size: 0.9rem;
+        font-size: 0.7rem;
         line-height: 1cm;
     }
     /* Contact */
