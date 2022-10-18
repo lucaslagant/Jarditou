@@ -41,13 +41,13 @@
         <h1 class="heading">Formulaire</h1>
         <hr></hr>
     <!-- Form    -->
-    <form class="form" action="" method="get">
+    <form class="form" id="form1" action="" method="post">
         <fieldset class="form">
             <!-- Personnal Info -->
             <legend>Vos coordonnées</legend>
             <div>
-                <label for="name">Votre nom* :</label>
-                <input id="name" type="text" name="name" required>
+                <label for="name" id="name">Votre nom* :</label>
+                <input type="text" name="name" required>
             </div>
             <div>
                 <label for="firstname">Votre prénom* :</label>
@@ -63,8 +63,8 @@
                 <input type="date" id="birthdate"  required>
             </div>
             <div>
-                <label for="code">Code Postal*:</label>
-                <input type="text" id="code" name="code" required>
+                <label for="postal">Code Postal*:</label>
+                <input type="text" id="postal" name="postal" required>
             </div>
             <div>
                 <label for="address">Adresse :</label>
@@ -104,7 +104,7 @@
         <!-- BTN -->
         <div class="btn">
             <input type="submit">
-            <input type="submit" value="Annuler">
+            <input type="reset" value="Annuler">
         </div>     
                 
     </form>

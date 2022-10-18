@@ -58,7 +58,6 @@ nav.container{
 .article-area .container{
     display: grid;
     grid-template-columns: 1fr 30%;
-    max-height: 600px;
     align-items: flex-start;
 }
 .article-area .heading{
