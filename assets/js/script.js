@@ -7,7 +7,7 @@ form.name.addEventListener('change', function () {
 });
 
 const validName = function(inputName) {
-    let nameRegex = new RegExp('^[a-zA-Z.-_]');
+    let nameRegex = new RegExp('^[a-zA-Z.-_]$');
 
     let testName = nameRegex.test(inputName.value);
     // console.log(testName);
@@ -20,7 +20,7 @@ form.firstname.addEventListener('change', function() {
 });
 
 const validFirstname = function(inputFirstname) {
-    let firstnameRegex = new RegExp ('^[a-zA-Z.-_]');
+    let firstnameRegex = new RegExp ('^[a-zA-Z.-_]$');
 
     let testFirstname = firstnameRegex.test(inputFirstname.value);
     // console.log(testFirstname);
@@ -33,7 +33,7 @@ form.postal.addEventListener('change', function(){
 });
 
 const validPostal = function(inputPostal) {
-    let postalRegex = new RegExp ('^[0-9]{5}');
+    let postalRegex = new RegExp ('^[0-9]{5}$');
 
     let testPostal = postalRegex.test(inputPostal.value);
     // console.log(testPostal);
@@ -46,7 +46,7 @@ form.address.addEventListener('change', function() {
 });
 
 const validAddress = function(inputAddress) {
-    let addressRegex = new RegExp('^[a-zA-Z0-9.-_]');
+    let addressRegex = new RegExp('^[a-zA-Z0-9.-_]$');
 
     let testAddress = addressRegex.test(inputAddress.value);
     // console.log(testAddress);
@@ -59,7 +59,7 @@ form.city.addEventListener('change', function() {
 });
 
 const validCity = function(inputCity){
-    let cityRegex = new RegExp ('^[a-zA-Z]');
+    let cityRegex = new RegExp ('^[a-zA-Z]$');
 
     let testCity = cityRegex.test(inputCity.value);
     // console.log(testCity);
@@ -93,7 +93,7 @@ form.question.addEventListener('change', function() {
 });
 
 const validQuestion = function(textareaQuestion) {
-    let questionRegex = new RegExp('^[a-zA-Z0-9.-_]');
+    let questionRegex = new RegExp('^[a-zA-Z0-9.-_]$');
 
     let testQuestion = questionRegex.test(textareaQuestion.value);
     // console.log(testQuestion);
