@@ -47,11 +47,11 @@
             <legend>Vos coordonnées</legend>
             <div>
                 <label for="name" id="name">Votre nom* :</label>
-                <input type="text" name="name" required>
+                <input type="text" name="name"><span id="errorname"></span>
             </div>
             <div>
                 <label for="firstname">Votre prénom* :</label>
-                <input  id="firstname" name="firstname" type="text" required>
+                <input  id="firstname" name="firstname" type="text"><span id="errorfirstname"></span>
             </div>
             <div>
                 <label>Sexe* :</label>
@@ -60,23 +60,24 @@
             </div>
             <div>
                 <label for="birthdate">Date de naissance*:</label>
-                <input type="date" id="birthdate"  required>
+                <input type="date" id="birthdate" >
             </div>
             <div>
                 <label for="postal">Code Postal*:</label>
-                <input type="text" id="postal" name="postal" required>
+                <input type="text" id="postal" name="postal"><span id="errorpostal"></span>
             </div>
             <div>
                 <label for="address">Adresse :</label>
                 <input type="text" id="address" name="address">
+                <span id="erroraddress"></span>
             </div>
             <div>
                 <label for="city">Ville :</label>
-                <input type="text" id="city" name="city">
+                <input type="text" id="city" name="city"><span id="errorcity"></span>
             </div>
             <div>
                 <label for="email">Email*:</label>
-                <input type="email" placeholder="dave.loper@afpa.fr" name="email" id="email" required>
+                <input type="email" placeholder="dave.loper@afpa.fr" name="email" id="email"><span id="erroremail"></span>
             </div>        
         </fieldset>
         <fieldset class="form">
@@ -91,19 +92,21 @@
                     <option value="Reclamation">Reclamation</option>
                     <option value="autres">Autres</option>
                 </select>
+                <span id="errorselect"></span>
             </div>            
             <div>
                 <label for="question">Votre question*</label>
-                <textarea name="question" id="question" cols="30" rows="10" required></textarea>
+                <textarea name="question" id="question" cols="30" rows="10"></textarea>
+                <span id="errorquestion"></span>
             </div>            
         </fieldset>
         <!-- Valid checkbox -->
         <div>
-            <input type="checkbox" id="checkbox" name="checkbox" required><label for="checkbox">*J'accepte le traitement</label>
+            <input type="checkbox" id="checkbox" name="checkbox"><label for="checkbox">*J'accepte le traitement</label><span id="errorcheckbox"></span>
         </div>
         <!-- BTN -->
         <div class="btn">
-            <input type="submit">
+            <input type="submit" id="submit">
             <input type="reset" value="Annuler">
         </div>     
                 

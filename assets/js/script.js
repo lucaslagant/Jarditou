@@ -7,10 +7,13 @@ form.name.addEventListener('change', function () {
 });
 
 const validName = function(inputName) {
-    let nameRegex = new RegExp('^[a-zA-Z.-_]$');
+    let nameRegex = new RegExp('^[A-Za-z]+$');
 
     let testName = nameRegex.test(inputName.value);
     // console.log(testName);
+    if (testName == false) {
+        document.getElementById('errorname').innerHTML="Veuillez entrer un nom valide";
+    }
 }
 
 // FirstName
@@ -20,11 +23,15 @@ form.firstname.addEventListener('change', function() {
 });
 
 const validFirstname = function(inputFirstname) {
-    let firstnameRegex = new RegExp ('^[a-zA-Z.-_]$');
+    let firstnameRegex = new RegExp ('^[A-Za-z]+$');
 
     let testFirstname = firstnameRegex.test(inputFirstname.value);
     // console.log(testFirstname);
+    if (testFirstname == false) {
+        document.getElementById('errorfirstname').innerHTML="Veuillez entrer un prénom valide";
+    }
 }
+
 
 // Code Postal
 // console.log(form.postal);
@@ -37,6 +44,9 @@ const validPostal = function(inputPostal) {
 
     let testPostal = postalRegex.test(inputPostal.value);
     // console.log(testPostal);
+    if (testPostal == false) {
+        document.getElementById('errorpostal').innerHTML="Veuillez entrer un code postal valide";
+    }
 }
 
 // Adresse
@@ -50,6 +60,9 @@ const validAddress = function(inputAddress) {
 
     let testAddress = addressRegex.test(inputAddress.value);
     // console.log(testAddress);
+    if (testAddress == false) {
+        document.getElementById('errorpostal').innerHTML="Veuillez entrer une adresse valide";
+    }
 }
 
 // Ville
@@ -59,10 +72,13 @@ form.city.addEventListener('change', function() {
 });
 
 const validCity = function(inputCity){
-    let cityRegex = new RegExp ('^[a-zA-Z]$');
+    let cityRegex = new RegExp ('^[A-Za-z]+$');
 
     let testCity = cityRegex.test(inputCity.value);
-    // console.log(testCity);
+    console.log(testCity);
+    if (testCity == false) {
+        document.getElementById('errorcity').innerHTML="Veuillez entrer une ville valide";
+    }
 }
 
 // Email
@@ -76,6 +92,9 @@ const validEmail = function (inputEmail) {
 
     let testEmail = emailRegex.test(inputEmail.value);
     // console.log(testEmail);
+    if (testEmail == false) {
+        document.getElementById('erroremail').innerHTML="Veuillez entrer une email valide";
+    }
 }
 
 // Select
@@ -97,4 +116,10 @@ const validQuestion = function(textareaQuestion) {
 
     let testQuestion = questionRegex.test(textareaQuestion.value);
     // console.log(testQuestion);
+    if (testQuestion == false) {
+        document.getElementById('erroremail').innerHTML="Veuillez entrer une question valide";
+    }
 }
+document.getElementById("submit").addEventListener("click", function(event) {
+    event.preventDefault();
+});
